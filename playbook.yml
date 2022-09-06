@@ -1,0 +1,13 @@
+- name: Ansible-Activity
+  remote_user: ubuntu
+  hosts: webserver
+  gather_facts: false
+
+  pre_tasks:
+    - name: Wait 60 seconds for the hosts to become alive
+      ansible.builtin.wait_for_connection:
+        timeout: 60
+
+  roles:
+    - configure
+    - deploy

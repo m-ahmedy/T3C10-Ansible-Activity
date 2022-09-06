@@ -1,0 +1,146 @@
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-052efd3df9dad4825",
+                    "InstanceId": "i-058e494d09de67c21",
+                    "InstanceType": "t2.micro",
+                    "KeyName": "t3c10-key",
+                    "LaunchTime": "2022-09-06T18:36:25.000Z",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-east-1a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-172-31-80-133.ec2.internal",
+                    "PrivateIpAddress": "172.31.80.133",
+                    "ProductCodes": [],
+                    "PublicDnsName": "ec2-44-202-69-77.compute-1.amazonaws.com",
+                    "PublicIpAddress": "44.202.69.77",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0fbed23f12a2170e5",
+                    "VpcId": "vpc-04b5d90a530851f2e",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2022-09-06T18:36:26.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-08d9b002f63fb7464"
+                            }
+                        }
+                    ],
+                    "ClientToken": "EC2Se-EC2In-1HN0SKLRLLCFF",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-44-202-69-77.compute-1.amazonaws.com",
+                                "PublicIp": "44.202.69.77"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2022-09-06T18:36:25.000Z",
+                                "AttachmentId": "eni-attach-0e6071e1529bf77c1",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "Ansible-Activity-SG",
+                                    "GroupId": "sg-0fac54417665f9a4a"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "12:e8:c0:cb:46:97",
+                            "NetworkInterfaceId": "eni-0ab231c8d956f7bfd",
+                            "OwnerId": "667184564057",
+                            "PrivateDnsName": "ip-172-31-80-133.ec2.internal",
+                            "PrivateIpAddress": "172.31.80.133",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-44-202-69-77.compute-1.amazonaws.com",
+                                        "PublicIp": "44.202.69.77"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-172-31-80-133.ec2.internal",
+                                    "PrivateIpAddress": "172.31.80.133"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0fbed23f12a2170e5",
+                            "VpcId": "vpc-04b5d90a530851f2e",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "Ansible-Activity-SG",
+                            "GroupId": "sg-0fac54417665f9a4a"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "aws:cloudformation:stack-name",
+                            "Value": "EC2Server-T3C10-Tue"
+                        },
+                        {
+                            "Key": "aws:cloudformation:logical-id",
+                            "Value": "EC2Instance"
+                        },
+                        {
+                            "Key": "aws:cloudformation:stack-id",
+                            "Value": "arn:aws:cloudformation:us-east-1:667184564057:stack/EC2Server-T3C10-Tue/c6fe0a60-2e12-11ed-b68a-129c5a3cfaa3"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "Ansible-Activity-Server"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled"
+                    }
+                }
+            ],
+            "OwnerId": "667184564057",
+            "RequesterId": "043234062703",
+            "ReservationId": "r-0dbde03d3bb9f58a2"
+        }
+    ]
+}
